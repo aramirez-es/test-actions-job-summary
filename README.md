@@ -7,3 +7,10 @@ The [Entrypoint](.github/workflows/entrypoint.yml) is a simple workflow file wit
 
 * Checkout the code
 * Run a composite action
+
+The Composite Action is a sequence of simple steps. Some of these steps produce markdown
+output piped into the `$GITHUB_STEP_SUMMARY` but also runs another composite action:
+
+* Simple Setup step
+* Run a nested composite action
+* Simple wrap up step

@@ -13,4 +13,4 @@ jobs:
       - name: Checkout source code from Github
         uses: actions/checkout@v3
 
-      - run: echo "Hello World"
+      - uses: ./composite
