@@ -20,7 +20,9 @@ output piped into the `$GITHUB_STEP_SUMMARY`.
 ### Expected Behaviour
 
 Every content piped to `$GITHUB_STEP_SUMMARY` within the Composite Action gets shown in the
-Job summary for the workflow defined as Entrypoint.
+Job summary for the workflow defined as Entrypoint. As per the [official documentation](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#adding-a-job-summary)
+
+> When a job finishes, the summaries for all steps in a job are grouped together into a single job summary and are shown on the workflow run summary page.
 
 ### Actual Behaviour
 
