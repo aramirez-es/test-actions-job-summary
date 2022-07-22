@@ -1,0 +1,16 @@
+name: Single-Module Workflow
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  main-workflow:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: Checkout source code from Github
+        uses: actions/checkout@v3
+
+      - run: echo "Hello World"
