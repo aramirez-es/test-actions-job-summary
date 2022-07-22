@@ -9,9 +9,20 @@ runs:
       run: |
         echo "Set up the composite action"
         echo "Set up the composite action" >> $GITHUB_STEP_SUMMARY
+        echo "$GITHUB_STEP_SUMMARY"
+        cat $GITHUB_STEP_SUMMARY
+
+    - name: Another arbitrary non-relevant step
+      shell: bash
+      run: |
+        echo "Ignore me"
+        echo "$GITHUB_STEP_SUMMARY"
+        cat $GITHUB_STEP_SUMMARY
 
     - name: Wrap Up
       shell: bash
       run: |
         echo "Wrap up the composite action"
         echo "Wrap up the composite action" >> $GITHUB_STEP_SUMMARY
+        echo "$GITHUB_STEP_SUMMARY"
+        cat $GITHUB_STEP_SUMMARY
