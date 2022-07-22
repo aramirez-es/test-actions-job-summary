@@ -43,4 +43,5 @@ Job summary.
 
 ### Actual Behaviour
 
--
+All the content piped to `$GITHUB_STEP_SUMMARY` by each single step in the workflow file
+gets bundled and the Job Summary shows it properly.
